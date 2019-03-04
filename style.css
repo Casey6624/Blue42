@@ -772,11 +772,6 @@ a:hover, a:active {
 	outline: 0;
 }
 
-#content{
-	margin: 50px;
-	width: 100%;
-}
-
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -1010,7 +1005,7 @@ object {
 }
 
 .custom-logo{
-	width: 250px;
+	width: 150px;
 	text-align: center;
 
 }
@@ -1018,13 +1013,56 @@ object {
 .site-description{
 	color: white;
 	text-transform: uppercase;
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	font-family: 'Graduate', cursive;
+	margin: 15px;
+	justify-content: center;
 }
+
+/* BODY CSS */
+
+body{
+	background: #041E42;
+}
+
+#content{
+	background: #f2f2f2;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 5px;
+	box-shadow: #041E42;
+}
+
 
 /* NAVIGATION CSS */
 
 #site-navigation{
 	background: #6F263D;
-	padding: 50px;
+	padding: 15px;
+}
+
+.main-navigation{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#site-navigation a {
+	text-align: center;
+	font-family: 'Graduate', cursive;
+	color: #FFB81C;
+	font-weight: bold;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	padding: 0 15px 0 15px;
+	margin: 5px;
+}
+
+.site-navigation{
+	text-align: center;
+}
+
+#site-navigation a:hover{
+	color: #000000 !important;
+	background: #FFB81C;
+	border-radius: 15px;
 }

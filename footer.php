@@ -9,22 +9,17 @@
  * @package Blue42
  */
 
+ // Feel free to delete/replace credits with your own stuff!
+
 ?>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'blue42' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'blue42' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'blue42' ), 'blue42', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'BLUE42' ), 'BLUE42', '<a href="https://caseysmith.co.uk">Casey Smith</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

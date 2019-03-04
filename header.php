@@ -25,6 +25,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blue42' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<div class="liveScores">
+			<p> LIVE SCORES </p>
+		</div>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -54,5 +57,17 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+<script>
+	let APIScores = document.getElementById("liveScores");
+	let APIUrl = "http://data.nba.net/10s/prod/v1/20190303/scoreboard.json";
 
+fetch(APIUrl)
+.then(res => res.json())
+.then(function(data){
+    console.log(data)
+})
+.catch(err => {
+    console.log(err)
+})
+</script>
 	<div id="content" class="site-content">
